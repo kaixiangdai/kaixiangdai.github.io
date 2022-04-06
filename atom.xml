@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kaixiangdai.github.io</id>
     <title>沐凩影的博客</title>
-    <updated>2022-04-06T07:35:55.710Z</updated>
+    <updated>2022-04-06T07:36:12.537Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kaixiangdai.github.io"/>
     <link rel="self" href="https://kaixiangdai.github.io/atom.xml"/>
@@ -65,12 +65,6 @@
         <link href="https://kaixiangdai.github.io/post/ruo-zai-xu-wo-shao-nian-shi-yi-liang-huang-jin-yi-liang-feng/">
         </link>
         <updated>2022-04-05T16:34:02.000Z</updated>
-        <summary type="html"><![CDATA[<h2 id="代">代</h2>
-]]></summary>
-        <content type="html"><![CDATA[<h2 id="代">代</h2>
-<!-- more -->
-<!-- more -->
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[测试一下]]></title>
