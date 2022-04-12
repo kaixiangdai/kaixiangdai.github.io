@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kaixiangdai.github.io</id>
     <title>沐凩影的博客</title>
-    <updated>2022-04-06T07:36:12.537Z</updated>
+    <updated>2022-04-12T09:47:05.153Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kaixiangdai.github.io"/>
     <link rel="self" href="https://kaixiangdai.github.io/atom.xml"/>
-    <subtitle>年少时驰骋的风,比黄金都贵</subtitle>
+    <subtitle>日光照到的一切地方都有阴影</subtitle>
     <logo>https://kaixiangdai.github.io/images/avatar.png</logo>
     <icon>https://kaixiangdai.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 沐凩影的博客</rights>
@@ -74,7 +74,7 @@
         <updated>2022-04-05T12:14:49.000Z</updated>
         <content type="html"><![CDATA[<h3 id="28-图片">2.8 图片</h3>
 <p>插入图片，格式如下：</p>
-<figure data-type="image" tabindex="1"><img src="https://www.nginx.cn/wp-content/uploads/2020/03/qrcode_for_gh_82cf87d482f0_258.jpg" alt="这里写图片描述" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="" alt="这里写图片描述" loading="lazy"></figure>
 <p>支持 jpg、png、gif、svg 等图片格式，<strong>其中 svg 文件仅可在微信公众平台中使用</strong>，svg 文件示例如下：</p>
 <figure data-type="image" tabindex="2"><img src="https://markdown.com.cn/images/i-am-svg.svg" alt="" loading="lazy"></figure>
 <p>支持图片<strong>拖拽和截图粘贴</strong>到编辑器中。</p>
