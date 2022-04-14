@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kaixiangdai.github.io</id>
     <title>沐凩影的博客</title>
-    <updated>2022-04-14T06:42:59.045Z</updated>
+    <updated>2022-04-14T06:52:00.203Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kaixiangdai.github.io"/>
     <link rel="self" href="https://kaixiangdai.github.io/atom.xml"/>
@@ -174,11 +174,7 @@ React 本身只是一个 V（视图层框架）而已，所以如果是大型项
         <link href="https://kaixiangdai.github.io/post/ruo-zai-xu-wo-shao-nian-shi-yi-liang-huang-jin-yi-liang-feng/">
         </link>
         <updated>2022-04-05T16:34:02.000Z</updated>
-        <summary type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://kaixiangdai.github.io/post-images/1649918507206.jpg" alt="" loading="lazy"></figure>
-]]></summary>
         <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://kaixiangdai.github.io/post-images/1649918507206.jpg" alt="" loading="lazy"></figure>
-<!-- more -->
-<!-- more -->
 ]]></content>
     </entry>
     <entry>
