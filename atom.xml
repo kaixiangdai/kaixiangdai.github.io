@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kaixiangdai.github.io</id>
     <title>沐凩影的博客</title>
-    <updated>2022-04-12T09:47:05.153Z</updated>
+    <updated>2022-04-14T06:34:06.974Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kaixiangdai.github.io"/>
     <link rel="self" href="https://kaixiangdai.github.io/atom.xml"/>
@@ -10,6 +10,115 @@
     <logo>https://kaixiangdai.github.io/images/avatar.png</logo>
     <icon>https://kaixiangdai.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 沐凩影的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[React学习]]></title>
+        <id>https://kaixiangdai.github.io/post/react-xue-xi/</id>
+        <link href="https://kaixiangdai.github.io/post/react-xue-xi/">
+        </link>
+        <updated>2022-04-14T06:27:29.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p><strong>React 特点</strong></p>
+</blockquote>
+<ul>
+<li>优点<br>
+1.React 速度快（虚拟 DOM）<br>
+2.跨浏览器兼容<br>
+3.组件化<br>
+4.单向数据流</li>
+<li>缺点<br>
+React 本身只是一个 V（视图层框架）而已，所以如果是大型项目想要一套完整的框架的话，也许还需要引入 redux 和 routing 相关的东西。</li>
+</ul>
+<blockquote>
+<p><strong>React 高效的原因</strong></p>
+</blockquote>
+<ul>
+<li>它并不直接对 DOM 进行操作，它引入了一个虚拟 DOM 的概念，安插在 JavaScript 逻辑和实际的 DOM 之间，这一概念提高了 WEB 性能，</li>
+</ul>
+<blockquote>
+<p><strong>JSX 语法规则</strong></p>
+</blockquote>
+<ol>
+<li>
+<p>定义虚拟 DOM时，不要写引号。</p>
+</li>
+<li>
+<p>标签中混入 JS 表达式时要用-</p>
+</li>
+<li>
+<p>样式的类名指定不要用 class 要用 c1assName.</p>
+</li>
+<li>
+<p>内联样式，要用 sty1e=iikey : value}}的形式去写。</p>
+</li>
+<li>
+<p>只有一个根标签</p>
+</li>
+<li>
+<p>标签必须团合</p>
+</li>
+<li>
+<p>标签首字母</p>
+<p>(1).若小写字母开头，则将改标签转为 htm1 中同名元素，若 html 中无该标签对应的同名元素，则报错。</p>
+<p>(2).若大写字母开头，react 就去渲染对应的组件，若组件没有定义，则报错</p>
+</li>
+</ol>
+<pre><code>&lt;body&gt;
+    &lt;div id=&quot;example&quot;&gt;&lt;/div&gt;
+    &lt;!-- 容器 --&gt;
+    &lt;script type=&quot;text/babel&quot;&gt;
+        const myId = 'IDd'
+        const myData = 'MYData'
+        const VDOM = (
+            &lt;div&gt;
+                &lt;h2 className=&quot;title&quot; id={myId.toLowerCase()}&gt; 
+                    &lt;span style={{ color: 'red', fontSize: '99px' }}&gt; {myData.toUpperCase()}&lt;/span&gt; 
+                &lt;/h2&gt;
+            &lt;/div&gt;
+        )
+        ReactDOM.render(
+            VDOM
+            ,
+            document.getElementById('example')
+        );
+    &lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+<blockquote>
+<p>JSX小练习</p>
+</blockquote>
+<pre><code>&lt;body&gt;
+    &lt;div id=&quot;example&quot;&gt;&lt;/div&gt;
+    &lt;!-- 容器 --&gt;
+    &lt;script type=&quot;text/babel&quot;&gt;
+        const data=[&quot;数组一&quot;,&quot;数组二&quot;,&quot;数组三&quot;]
+        const VDOM = (
+            &lt;div&gt;
+            &lt;h1&gt; 前端js框架列表&lt;/h1&gt;
+              &lt;ul&gt;
+                {
+                    data.map((item,index)=&gt;{
+                      return  &lt;li key={index}&gt;{item} &lt;/li&gt;
+                    })
+                }
+              &lt;/ul&gt;
+            &lt;/div&gt;
+        )
+        ReactDOM.render(
+            VDOM, document.getElementById('example')
+        );
+    &lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+<blockquote>
+<h1 id="组件与模块"><strong>组件与模块</strong></h1>
+</blockquote>
+<details>
+<summary>展开查看</summary>
+<pre><code>
+看啥呢,爷没写
+</code></pre>
+</details>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[句子]]></title>
         <id>https://kaixiangdai.github.io/post/ju-zi/</id>
