@@ -1,98 +1,105 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>若再许我少年时,一两黄金一两风 | 凩沐影的博客</title>
-<link rel="shortcut icon" href="https://kaixiangdai.github.io/favicon.ico?v=1650186897196">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<meta name="description" content="日光照到的一切地方都有阴影">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://kaixiangdai.github.io/favicon.ico?v=1650187330894">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://kaixiangdai.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="若再许我少年时,一两黄金一两风 | 凩沐影的博客 - Atom Feed" href="https://kaixiangdai.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-    <meta name="description" content="小说里的经典语句
-1、爱情不能被占有，只能被接受。
-2、别后相思空一水，重来回首已三生。
-3、不再孤独，只有曾经真正孤独过的人才知道这是种多么微妙的感觉
-4、隔了百年的光阴，万里的迢梯，浮世肮脏，人心险诈，割裂了生和死。到哪里，再去寻找。纯..." />
-    <meta name="keywords" content="少年" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://kaixiangdai.github.io">
-  <img class="avatar" src="https://kaixiangdai.github.io/images/avatar.png?v=1650186897196" alt="">
-  </a>
-  <h1 class="site-title">
-    凩沐影的博客
-  </h1>
-  <p class="site-description">
-    日光照到的一切地方都有阴影
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://kaixiangdai.github.io">
+        <img class="avatar" src="https://kaixiangdai.github.io/images/avatar.png?v=1650187330894" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://kaixiangdai.github.io">
+        <h1 class="site-title">凩沐影的博客</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
         <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              若再许我少年时,一两黄金一两风
-            </h2>
-            <div class="post-info">
-              <span>
-                Wednesday, April 6th 2022, 12:34:02 
-              </span>
-              <span>
-                5 min read
-              </span>
-              
-                <a href="https://kaixiangdai.github.io/tag/Rb-o8su7e/" class="post-tag">
-                  # 少年
-                </a>
-              
+          
+            <div class="feature-container" style="background-image: url('https://kaixiangdai.github.io/post-images/ruo-zai-xu-wo-shao-nian-shi-yi-liang-huang-jin-yi-liang-feng.jpg')">
             </div>
+          
+          <h2 class="post-title">若再许我少年时,一两黄金一两风</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> Wednesday, April 6th 2022, 12:34:02 </span>
             
-              <img class="post-feature-image" src="https://kaixiangdai.github.io/post-images/ruo-zai-xu-wo-shao-nian-shi-yi-liang-huang-jin-yi-liang-feng.jpg" alt="">
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://kaixiangdai.github.io/tag/Rb-o8su7e/">
+                    少年
+                    
+                  </a>
+                
+              </span>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <h2 id="小说里的经典语句">小说里的经典语句</h2>
+          </div>
+          <div class="post-content">
+            <h2 id="小说里的经典语句">小说里的经典语句</h2>
 <p>1、爱情不能被占有，只能被接受。</p>
 <p>2、别后相思空一水，重来回首已三生。</p>
 <p>3、不再孤独，只有曾经真正孤独过的人才知道这是种多么微妙的感觉</p>
@@ -134,109 +141,86 @@
 <p>39、总是在老歌里，我才会充分意识到自己的温情。流金岁月，配上简单的老歌，也便配上了真实的悲欢。</p>
 <p>40、最佳的报复不是仇恨，而是打心底发出的冷淡，干嘛花力气去恨一个不相干的人。——《我的前半生》</p>
 
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E5%B0%8F%E8%AF%B4%E9%87%8C%E7%9A%84%E7%BB%8F%E5%85%B8%E8%AF%AD%E5%8F%A5">小说里的经典语句</a></li>
-</ul>
-</li>
-</ul>
-
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
 
         
           <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://kaixiangdai.github.io/post/ce-shi-yi-xia/">
+            <a class="purple-link" href="https://kaixiangdai.github.io/post/ce-shi-yi-xia/">
               <h3 class="post-title">
-                Typescript
+                下一篇：Typescript
               </h3>
             </a>
           </div>
-        
-
-        
           
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+      </div>
 
-<div id="gitalk-container"></div>
+      
+        
+          <div id="gitalk-container"></div>
+        
 
-<script>
+        
+      
 
-  var gitalk = new Gitalk({
-    clientID: 'e6303204480e4b5d2024',
-    clientSecret: '3393a8899d43331c7e1b90e01de3dcc16267d78b',
-    repo: 'kaixiangdai.github.io',
-    owner: 'kaixiangdai',
-    admin: ['kaixiangdai'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
+      <div class="site-footer">
+  <div class="slogan">日光照到的一切地方都有阴影</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/kaixiangdai" target="_blank">沐凩影</a> | <a class="rss" href="https://kaixiangdai.github.io/atom.xml" target="_blank">RSS</a>
+</div>
 
-  gitalk.render('gitalk-container')
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
-          
 
-          
-        
 
-        <div class="site-footer">
-  Powered by <a href="https://github.com/kaixiangdai" target="_blank">沐凩影</a>
-  <a class="rss" href="https://kaixiangdai.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
-      </div>
-    </div>
-
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script>
-      hljs.initHighlightingOnLoad()
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+      var gitalk = new Gitalk({
+        clientID: 'e6303204480e4b5d2024',
+        clientSecret: '3393a8899d43331c7e1b90e01de3dcc16267d78b',
+        repo: 'kaixiangdai.github.io',
+        owner: 'kaixiangdai',
+        admin: ['kaixiangdai'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
-
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
-
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
+      gitalk.render('gitalk-container')
 
     </script>
+  
+
+  
+
+
+
+
   </body>
 </html>
