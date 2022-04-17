@@ -1,155 +1,150 @@
+<!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
-<title>凩沐影的博客</title>
-<meta name="description" content="日光照到的一切地方都有阴影">
+<title>文章归档 | 凩沐影的博客</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://kaixiangdai.github.io/favicon.ico?v=1650187330894">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://kaixiangdai.github.io/favicon.ico?v=1650188006232">
 <link rel="stylesheet" href="https://kaixiangdai.github.io/styles/main.css">
 
 
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
+    <meta name="description" content="日光照到的一切地方都有阴影">
   </head>
   <body>
     <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://kaixiangdai.github.io">
-        <img class="avatar" src="https://kaixiangdai.github.io/images/avatar.png?v=1650187330894" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://kaixiangdai.github.io">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://kaixiangdai.github.io">
+        <img src="https://kaixiangdai.github.io/images/avatar.png?v=1650188006232" class="site-logo">
         <h1 class="site-title">凩沐影的博客</h1>
       </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
+    <div>
       
         
-          <a href="/" class="menu purple-link">
+          <a href="/" class="site-nav">
             首页
           </a>
         
       
         
-          <a href="/archives" class="menu purple-link">
+          <a href="/archives" class="site-nav">
             归档
           </a>
         
       
         
-          <a href="/tags" class="menu purple-link">
+          <a href="/tags" class="site-nav">
             标签
           </a>
         
       
     </div>
   </div>
-</transition>
-
-
-        <div class="content-container">
-          
-          
-
-<div class="archives-container">
-  
-    <h2 class="year">2022</h2>
-    
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-        <article class="post">
-          <a href="https://kaixiangdai.github.io/post/react-xue-xi/">
-            <h2 class="post-title">
-              React学习
-              <small>Thursday, April 14th 2022, 2:27:29 </small>
-            </h2>
-          </a>
-        </article>
+        
       
-    
+        
       
-        <article class="post">
-          <a href="https://kaixiangdai.github.io/post/ju-zi/">
-            <h2 class="post-title">
-              Vue
-              <small>Wednesday, April 6th 2022, 3:35:18 </small>
-            </h2>
-          </a>
-        </article>
+        
       
-    
+        
       
-        <article class="post">
-          <a href="https://kaixiangdai.github.io/post/ruo-zai-xu-wo-shao-nian-shi-yi-liang-huang-jin-yi-liang-feng/">
-            <h2 class="post-title">
-              若再许我少年时,一两黄金一两风
-              <small>Wednesday, April 6th 2022, 12:34:02 </small>
-            </h2>
-          </a>
-        </article>
+        
       
-    
-      
-        <article class="post">
-          <a href="https://kaixiangdai.github.io/post/ce-shi-yi-xia/">
-            <h2 class="post-title">
-              Typescript
-              <small>Tuesday, April 5th 2022, 8:14:49 </small>
-            </h2>
-          </a>
-        </article>
-      
-    
-  
+    </div>
+    <div class="site-description">
+      日光照到的一切地方都有阴影
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/kaixiangdai" target="_blank">沐凩影</a> | <a class="rss" href="https://kaixiangdai.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
 </div>
 
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+
+          <h2 class="archives-title">文章归档</h2>
+          <div class="archives-container">
+            
+              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2022</h2>
+              
+                
+                  <article class="post">
+                    <a href="https://kaixiangdai.github.io/post/react-xue-xi/">
+                      <h2 class="post-title">
+                        React学习
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://kaixiangdai.github.io/post/ju-zi/">
+                      <h2 class="post-title">
+                        Vue
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://kaixiangdai.github.io/post/ruo-zai-xu-wo-shao-nian-shi-yi-liang-huang-jin-yi-liang-feng/">
+                      <h2 class="post-title">
+                        若再许我少年时,一两黄金一两风
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://kaixiangdai.github.io/post/ce-shi-yi-xia/">
+                      <h2 class="post-title">
+                        Typescript
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+            
+          </div>
+
+          <div class="pagination-container">
+  
+  
+</div>
 
         </div>
-
-        <div class="site-footer">
-  <div class="slogan">日光照到的一切地方都有阴影</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  Powered by <a href="https://github.com/kaixiangdai" target="_blank">沐凩影</a> | <a class="rss" href="https://kaixiangdai.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-
       </div>
-      <script type="application/javascript">
+    </div>
 
-hljs.initHighlightingOnLoad()
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
 
 var app = new Vue({
   el: '#app',
@@ -161,8 +156,14 @@ var app = new Vue({
 </script>
 
 
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
 
 
-    </div>
+
+
+
   </body>
 </html>
