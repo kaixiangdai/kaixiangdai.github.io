@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kaixiangdai.github.io</id>
     <title>凩沐影的博客</title>
-    <updated>2022-04-18T04:31:33.127Z</updated>
+    <updated>2022-04-18T04:37:27.136Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kaixiangdai.github.io"/>
     <link rel="self" href="https://kaixiangdai.github.io/atom.xml"/>
@@ -62,7 +62,7 @@ React 本身只是一个 V（视图层框架）而已，所以如果是大型项
 <p>(2).若大写字母开头，react 就去渲染对应的组件，若组件没有定义，则报错</p>
 </li>
 </ol>
-<pre><code class="language-react">&lt;body&gt;
+<pre><code class="language-html">&lt;body&gt;
     &lt;div id=&quot;example&quot;&gt;&lt;/div&gt;
     &lt;!-- 容器 --&gt;
     &lt;script type=&quot;text/babel&quot;&gt;
