@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kaixiangdai.github.io</id>
     <title>凩沐影的博客</title>
-    <updated>2022-05-29T04:00:26.556Z</updated>
+    <updated>2022-05-29T04:50:37.928Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kaixiangdai.github.io"/>
     <link rel="self" href="https://kaixiangdai.github.io/atom.xml"/>
@@ -143,7 +143,45 @@ React 本身只是一个 V（视图层框架）而已，所以如果是大型项
         <link href="https://kaixiangdai.github.io/post/ju-zi/">
         </link>
         <updated>2022-04-06T07:35:18.000Z</updated>
-        <content type="html"><![CDATA[<h2 id=""></h2>
+        <content type="html"><![CDATA[<h2 id="一-vue是什么">一、Vue是什么</h2>
+<p>Vue.js（/vjuː/，或简称为Vue）是一个用于创建用户界面的开源JavaScript框架，也是一个创建单页应用的Web应用框架。</p>
+<blockquote>
+<p><strong>vue旨在更好地组织与简化Web开发。Vue所关注的核心是MVC模式中的视图层，同时，它也能方便地获取数据更新，并通过组件内部特定的方法实现视图与模型的交互。<br>
+vue框架最早发布于2014年2月</strong></p>
+</blockquote>
+<h2 id="二-vue核心特性">二、Vue核心特性</h2>
+<h4 id="数据驱动mvvm">数据驱动（MVVM)</h4>
+<ol>
+<li>Model：模型层，负责处理业务逻辑以及和服务器端进行交互</li>
+<li>View：视图层：负责将数据模型转化为UI展示出来，可以简单的理解为HTML页面</li>
+<li>ViewModel：视图模型层，用来连接Model和View，是Model和View之间的通信桥梁</li>
+</ol>
+<h4 id="三-组件化">三、组件化</h4>
+<ol>
+<li>（什么是组件化）就是把图形、非图形的各种逻辑均抽象为一个统一的概念（组件）来实现开发的模式，在Vue中每一个.vue文件都可以视为一个组件</li>
+<li>组件化的优势</li>
+</ol>
+<ul>
+<li><strong>降低整个系统的耦合度</strong>，在保持接口不变的情况下，我们可以替换不同的组件快速完成需求，例如输入框，可以替换为日历、时间、范围等组件作具体的实现</li>
+<li><strong>调试方便</strong>，由于整个系统是通过组件组合起来的，在出现问题的时候，可以用排除法直接移除组件，或者根据报错的组件快速定位问题，之所以能够快速定位，是因为每个组件之间低耦合，职责单一，所以逻辑会比分析整个系统要简单</li>
+<li><strong>提高可维护性</strong>，由于每个组件的职责单一，并且组件在系统中是被复用的，所以对代码进行优化可获得系统的整体升级</li>
+</ul>
+<h4 id="四-指令系统">四、指令系统</h4>
+<p>解释：指令 (Directives) 是带有 v- 前缀的特殊属性作用：当表达式的值改变时，将其产生的连带影响，响应式地作用于 DOM</p>
+<p><strong>常用的指令</strong></p>
+<ul>
+<li>条件渲染指令 v-if</li>
+<li>列表渲染指令v-for</li>
+<li>属性绑定指令v-bind</li>
+<li>事件绑定指令v-on</li>
+<li>双向数据绑定指令v-model</li>
+</ul>
+<h4 id="五-vue和jquery开发的区别">五、Vue和Jquery开发的区别</h4>
+<ol>
+<li>Vue所有的界面事件，都是只去操作数据的，Jquery操作DOM</li>
+<li>Vue所有界面的变动，都是根据数据自动绑定出来的，Jquery操作DOM</li>
+</ol>
+<h4 id="六-vue和react对比">六、Vue和React对比</h4>
 ]]></content>
     </entry>
     <entry>
