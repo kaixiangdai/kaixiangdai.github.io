@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kaixiangdai.github.io</id>
     <title>凩沐影的博客</title>
-    <updated>2022-06-09T08:14:26.673Z</updated>
+    <updated>2022-08-10T02:17:31.906Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kaixiangdai.github.io"/>
     <link rel="self" href="https://kaixiangdai.github.io/atom.xml"/>
@@ -11,87 +11,15 @@
     <icon>https://kaixiangdai.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 凩沐影的博客</rights>
     <entry>
-        <title type="html"><![CDATA[Element+vue3]]></title>
+        <title type="html"><![CDATA[antd+vue3]]></title>
         <id>https://kaixiangdai.github.io/post/elementvue3/</id>
         <link href="https://kaixiangdai.github.io/post/elementvue3/">
         </link>
         <updated>2022-05-01T11:01:33.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li><a href="#%E4%B8%80-vue%E6%98%AF%E4%BB%80%E4%B9%88">一、Vue是什么</a></li>
-<li><a href="#%E4%BA%8C-vue%E6%A0%B8%E5%BF%83%E7%89%B9%E6%80%A7">二、Vue核心特性</a>
-<ul>
-<li><a href="#1-%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8mvvm">1. 数据驱动（MVVM)</a></li>
-<li><a href="#2-%E7%BB%84%E4%BB%B6%E5%8C%96">2. 组件化</a></li>
-<li><a href="#3%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F">3.指令系统</a></li>
-</ul>
-</li>
-<li><a href="#%E4%B8%89-vue%E5%92%8Cjquery%E5%BC%80%E5%8F%91%E7%9A%84%E5%8C%BA%E5%88%AB">三、Vue和Jquery开发的区别</a></li>
-<li><a href="#%E5%9B%9B-vue%E5%92%8Creact%E5%AF%B9%E6%AF%94">四、Vue和React对比</a></li>
-</ul>
-<h2 id="一-vue是什么">一、Vue是什么</h2>
-<p>Vue.js（/vjuː/，或简称为Vue）是一个用于创建用户界面的开源JavaScript框架，也是一个创建单页应用的Web应用框架。</p>
-<blockquote>
-<p><strong>vue旨在更好地组织与简化Web开发。Vue所关注的核心是MVC模式中的视图层，同时，它也能方便地获取数据更新，并通过组件内部特定的方法实现视图与模型的交互。<br>
-vue框架最早发布于2014年2月</strong></p>
-</blockquote>
-<h2 id="二-vue核心特性">二、Vue核心特性</h2>
-<h4 id="1-数据驱动mvvm">1. 数据驱动（MVVM)</h4>
-<ol>
-<li>Model：模型层，负责处理业务逻辑以及和服务器端进行交互</li>
-<li>View：视图层：负责将数据模型转化为UI展示出来，可以简单的理解为HTML页面</li>
-<li>ViewModel：视图模型层，用来连接Model和View，是Model和View之间的通信桥梁</li>
-</ol>
-<h4 id="2-组件化">2. 组件化</h4>
-<ol>
-<li>（什么是组件化）就是把图形、非图形的各种逻辑均抽象为一个统一的概念（组件）来实现开发的模式，在Vue中每一个.vue文件都可以视为一个组件</li>
-<li>组件化的优势</li>
-</ol>
-<ul>
-<li><strong>降低整个系统的耦合度</strong>，在保持接口不变的情况下，我们可以替换不同的组件快速完成需求，例如输入框，可以替换为日历、时间、范围等组件作具体的实现</li>
-<li><strong>调试方便</strong>，由于整个系统是通过组件组合起来的，在出现问题的时候，可以用排除法直接移除组件，或者根据报错的组件快速定位问题，之所以能够快速定位，是因为每个组件之间低耦合，职责单一，所以逻辑会比分析整个系统要简单</li>
-<li><strong>提高可维护性</strong>，由于每个组件的职责单一，并且组件在系统中是被复用的，所以对代码进行优化可获得系统的整体升级</li>
-</ul>
-<h4 id="3指令系统">3.指令系统</h4>
-<p>解释：指令 (Directives) 是带有 v- 前缀的特殊属性作用：当表达式的值改变时，将其产生的连带影响，响应式地作用于 DOM</p>
-<p><strong>常用的指令</strong></p>
-<ul>
-<li>条件渲染指令 v-if</li>
-<li>列表渲染指令v-for</li>
-<li>属性绑定指令v-bind</li>
-<li>事件绑定指令v-on</li>
-<li>双向数据绑定指令v-model
-<ul>
-<li><code>v-model</code>是 ”视图抛发改变数据的特定事件去驱动数据更改“ ，更像是双向绑定的一种“语法糖”，实际最终的数据还是由父组件传递给子组件的。</li>
-</ul>
-</li>
-</ul>
-<h2 id="三-vue和jquery开发的区别">三、Vue和Jquery开发的区别</h2>
-<ol>
-<li>Vue所有的界面事件，都是只去操作数据的，Jquery操作DOM</li>
-<li>Vue所有界面的变动，都是根据数据自动绑定出来的，Jquery操作DOM</li>
-</ol>
-<h2 id="四-vue和react对比">四、Vue和React对比</h2>
-<p><strong>相同点</strong></p>
-<ul>
-<li>都有组件化思想</li>
-<li>都支持服务器端渲染</li>
-<li>都有Virtual DOM（虚拟dom）</li>
-<li>数据驱动视图</li>
-<li>都有支持native的方案：
-<ul>
-<li>Vue的<a href="https://doc.weex.io/zh/guide/use-vue-in-weex.html">weex</a></li>
-<li>React的<a href="https://reactnative.dev/docs/getting-started">React native</a></li>
-</ul>
-</li>
-<li>都有自己的构建工具：Vue的vue-cli、React的Create React App</li>
-</ul>
-<p><strong>不同点</strong></p>
-<ul>
-<li>数据变化的实现原理不同。react使用的是不可变数据，而Vue使用的是可变的数据</li>
-<li>组件化通信的不同。react中我们通过使用回调函数来进行通信的，而Vue中子组件向父组件传递消息有两种方式：事件和回调函数</li>
-<li>diff算法不同。react主要使用diff队列保存需要更新哪些DOM，得到patch树，再统一操作批量更新DOM。Vue 使用双向指针，边对比，边更新DOM</li>
-<li>999999</li>
-</ul>
+        <content type="html"><![CDATA[<!-- more -->
+<h3 id="antd">Antd</h3>
+<p>常用的时候,请访问官网 https://www.antdv.com/components/overview-cn,<br>
+在使用组件库的时候,有时候会发现就是无法快速上手,那就需要,自己独立的看文档,多熟悉里面常用的APi</p>
 ]]></content>
     </entry>
     <entry>
@@ -350,7 +278,8 @@ vue框架最早发布于2014年2月</strong></p>
         <link href="https://kaixiangdai.github.io/post/ce-shi-yi-xia/">
         </link>
         <updated>2022-04-05T12:14:49.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="你的健康">你的健康</h3>
+        <content type="html"><![CDATA[<h3 id="目前仅仅知道基本个基本使用未进行太深入的研究和使用">目前仅仅知道基本个基本使用,未进行太深入的研究,和使用</h3>
+<h2 id="例如经常使用interface进行数据的定义">例如经常使用,Interface进行数据的定义</h2>
 ]]></content>
     </entry>
 </feed>
